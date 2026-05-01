@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitter Sweet 點餐系統</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="app-shell">
+      <section class="phone-page">
+        <header class="shop-header">
+          <div class="logo-circle">
+            <span>☕</span>
+          </div>
+
+          <div class="shop-title-area">
+            <h1>BITTER SWEET</h1>
+            <h2>COFFEE ROASTY</h2>
+            <p>精品咖啡・輕食點餐</p>
+          </div>
+
+          <div class="rule-card">
+            <p>自備環保杯優惠 5 元</p>
+            <span>Use reusable cup: -5 NT</span>
+            <p>內用限時 60 分鐘</p>
+            <span>Time limit to stay: 60 mins</span>
+          </div>
+        </header>
+
+        <main class="main-content">
+          <div class="notice-box">
+            <strong>ⓘ 以下飲品點擊「＋」後，可選擇尺寸與價位</strong>
+            <span>
+              適用：拿鐵咖啡、美式咖啡、黑糖拿鐵、焦糖瑪奇朵、摩卡瑪奇朵、義式咖啡
+            </span>
+          </div>
+
+          <div class="section-title">
+            <span>☕</span>
+            <h3>店內餐點</h3>
+          </div>
+
+          <div id="menuList" class="menu-list"></div>
+        </main>
+
+        <button id="cartFloatBtn" class="cart-float-btn">
+          🛒
+          <span id="cartBadge" class="cart-badge hidden">0</span>
+        </button>
+
+        <footer class="bottom-checkout-bar">
+          <div>
+            <p>小計 (<span id="bottomCount">0</span>)</p>
+            <strong id="bottomTotal">$0</strong>
+          </div>
+
+          <button id="bottomCheckoutBtn">結帳去 〉</button>
+        </footer>
+      </section>
+    </div>
+
+    <div id="modalRoot"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
