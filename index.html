@@ -10,6 +10,7 @@
   <body>
     <div class="app-shell">
       <section class="phone-page">
+        <!-- 店家資訊區 -->
         <header class="shop-header">
           <div class="logo-circle">
             <span>☕</span>
@@ -24,11 +25,13 @@
           <div class="rule-card">
             <p>自備環保杯優惠 5 元</p>
             <span>Use reusable cup: -5 NT</span>
+
             <p>內用限時 60 分鐘</p>
             <span>Time limit to stay: 60 mins</span>
           </div>
         </header>
 
+        <!-- 主內容區 -->
         <main class="main-content">
           <div class="notice-box">
             <strong>ⓘ 以下飲品點擊「＋」後，可選擇尺寸與價位</strong>
@@ -45,11 +48,13 @@
           <div id="menuList" class="menu-list"></div>
         </main>
 
+        <!-- 浮動購物車按鈕 -->
         <button id="cartFloatBtn" class="cart-float-btn">
           🛒
           <span id="cartBadge" class="cart-badge hidden">0</span>
         </button>
 
+        <!-- 底部結帳列 -->
         <footer class="bottom-checkout-bar">
           <div>
             <p>小計 (<span id="bottomCount">0</span>)</p>
@@ -61,6 +66,7 @@
       </section>
     </div>
 
+    <!-- 彈窗掛載區 -->
     <div id="modalRoot"></div>
 
     <script src="./app.js"></script>
